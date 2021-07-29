@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-color: #d8e3e7;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  color: white;
+}
+
+.nav {
+  float: right;
+  margin-top: 12px;
+  font-size: 18px;
+  overflow: hidden;
+  color: white;
+  padding: 28px;
+  position: relative;
+}
+
+.nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  margin-right: 30px;
+  padding: 18px 18px;
+}
+
+.header {
+  float: left;
+  font-size: 25px;
+  margin-left: 70px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  margin-right: 30px;
+  padding: 16px 16px;
+}
+
+.header h1 {
+  float: left;
+  position: relative;
+}
+
+.header-color {
+  background-color: #132c33;
+  height: 150px;
+  max-width: 100%;
+}
+
+.hero {
+  height: 200px;
+  width: 100%;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 8px 0 #132c33;
+}
+
+.page-wrapper {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  background-color: #d8e3e7;
+  width: 95%;
+  margin-top: 15px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.content h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* profile picture located in about section */
+img {
+  float: left;
+  height: auto;
+  max-width: 100%;
+  size: 200px;
+  margin-left: 8px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#about p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#about {
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  text-align: left;
+  padding: 16px 16px;
+  text-decoration: none;
+  background-color: #126e82;
+  box-shadow: 0px 0px 5px 5px #132c33;
+}
+
+#portfolio {
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  text-align: left;
+  padding: 16px 16px;
+  background-color: #126e82;
+  box-shadow: 0px 0px 5px 5px #132c33;
+}
+
+h3 {
+  color: #d8e3e7;
+}
+
+span {
+  color: #d8e3e7;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project {
+  background-image: url("../images/placeholder.jpg");
+  margin-top: 20px;
+  min-height: 300px;
+  flex-basis: 100%;
+  max-width: 95%;
+}
+
+#repository {
+  background-image: url("../images/placeholder.jpg");
+  margin-top: 20px;
+  min-height: 300px;
+  flex-basis: 100%;
+  max-width: 95%;
+}
+
+#dashboard {
+  background-image: url("../images/placeholder.jpg");
+  max-width: 58vh;
+  margin: 0.5em;
+  margin-top: 15px;
+}
+
+#backend {
+  background-image: url("../images/placeholder.jpg");
+  max-width: 58vh;
+  margin: 0.5em;
+  margin-top: 15px;
+}
+
+.flex-item {
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  font-size: 0.9rem;
+}
+
+.flex-item:hover {
+  opacity: 0.5;
+}
+
+.flex-item div {
+  padding: 5px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+/* Contact Section */
+#contact {
+  display: block;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: white;
+  text-align: left;
+  padding: 16px 16px;
+  background-color: #126e82;
+  box-shadow: 0px 0px 5px 5px #132c33;
+}
+
+ul {
+  margin-left: 290px;
+  flex-wrap: wrap;
+  font-size: 20px;
+  color: white;
+  columns: 2;
+  list-style-type: square;
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
+  color: white;
+}
+
+/* From widest to narrowest to avoid conflict */
+/* Tablets - nav bar is centered  */
+@media screen and (max-width: 992px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  ul {
+    margin-left: 30px;
+    flex-direction: row;
+  }
+}
+
+/* Large smartphones - navbar changes to column */
+/* Contact and About section arranged in a column */
+@media screen and (max-width: 768px) {
+  .flex-item,
+  #project,
+  #repository {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .contact,
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    margin-left: 15px;
+  }
+}
