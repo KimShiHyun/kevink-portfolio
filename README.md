@@ -1,7 +1,3 @@
-# kevink-portfolio
-
-Advanced CSS Homework for Week 2
-
 <h1 align="center">Kevin Kim's Portfolio</h1>
 
 <!-- TABLE OF CONTENTS -->
@@ -38,4 +34,5 @@ This repository contains my personal portfolio to showcase projects to potential
 
 The following image shows the web application's appearance and functionality:
 
-![Web Screenshot](./assets/images/website-appearance.png)
+![Web Screenshot](./assets/images/screenshot.png)
+![Web Screenshot](./assets/images/screenshot1.png)
