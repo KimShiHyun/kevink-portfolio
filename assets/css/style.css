@@ -151,7 +151,7 @@ span {
 }
 
 #project {
-  background-image: url("../images/placeholder.jpg");
+  background-image: url("../images/lyrific.png");
   margin-top: 20px;
   min-height: 300px;
   flex-basis: 100%;
@@ -173,8 +173,8 @@ span {
   margin-top: 15px;
 }
 
-#backend {
-  background-image: url("../images/placeholder.jpg");
+#quizlet {
+  background-image: url("../images/codequizlet.png");
   max-width: 58vh;
   margin: 0.5em;
   margin-top: 15px;
